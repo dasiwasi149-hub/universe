@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos - Explore the Universe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>EXPLORE THE UNIVERSE</h1>
+            <p>A journey through space, time, celestial bodies, and cosmic mysteries.</p>
+            <a href="#topics" class="btn">Start Exploring</a>
+        </div>
+    </header>
+
+    <!-- Interactive Navigation Cards Section -->
+    <section id="topics" class="container">
+        <h2>Cosmic Topics</h2>
+        <div class="cards-grid">
+            
+            <div class="card" onclick="openModal('bigbang')">
+                <h3>The Big Bang</h3>
+                <p>How it all began 13.8 billion years ago from a single singularity.</p>
+            </div>
+
+            <div class="card" onclick="openModal('stars')">
+                <h3>Stars & Galaxies</h3>
+                <p>Discover stellar evolution, supernovas, and billions of galaxies.</p>
+            </div>
+
+            <div class="card" onclick="openModal('blackholes')">
+                <h3>Black Holes</h3>
+                <p>Regions of spacetime where gravity is so strong nothing can escape.</p>
+            </div>
+
+            <div class="card" onclick="openModal('solarsystem')">
+                <h3>Solar System</h3>
+                <p>Our home: eight planets, moons, asteroids, and the Sun.</p>
+            </div>
+
+            <div class="card" onclick="openModal('darkmatter')">
+                <h3>Dark Matter & Energy</h3>
+                <p>The invisible components making up 95% of our universe.</p>
+            </div>
+
+            <div class="card" onclick="openModal('exploration')">
+                <h3>Space Exploration</h3>
+                <p>From Apollo 11 to James Webb: human progress in space.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="container quiz-section">
+        <h2>Test Your Knowledge</h2>
+        <div id="quiz-container">
+            <p id="quiz-question">Loading question...</p>
+            <div id="quiz-options" class="options-grid"></div>
+            <p id="quiz-result"></p>
+        </div>
+    </section>
+
+    <!-- Modal Popup for Details -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Topic Title</h2>
+            <p id="modal-body">Detailed information goes here...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Cosmos Project | Created for College Curriculum</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
